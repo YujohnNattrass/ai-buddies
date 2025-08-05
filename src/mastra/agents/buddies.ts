@@ -5,23 +5,23 @@ import { mcpTools, mcpToolsets } from '../tools/mcp';
 import { ghibliCharacters, ghibliFilms } from '../tools/ghibli-films';
 import { storySearch } from '../tools/story-search';
 
-const { github_search_repositories } = mcpTools;
+// const { github_search_repositories } = mcpTools;
 
 const memory = new Memory();
 
-export const gitBuddy = new Agent({
-  name: 'Git Buddy',
-  description: 'GitHub Agent, use for querying github repositories',
-  instructions: `
-      You are my GitHub assistant. I will give you GitHub repositories and you will help
-      answer any questions I have about the repository.
-    `,
-  model: openai('gpt-4o-mini'),
-  memory,
-  tools: {
-    github_search_repositories,
-  }
-});
+// export const gitBuddy = new Agent({
+//   name: 'Git Buddy',
+//   description: 'GitHub Agent, use for querying github repositories',
+//   instructions: `
+//       You are my GitHub assistant. I will give you GitHub repositories and you will help
+//       answer any questions I have about the repository.
+//     `,
+//   model: openai('gpt-4o-mini'),
+//   memory,
+//   tools: {
+//     github_search_repositories,
+//   }
+// });
 
 export const hackerNewsBuddy = new Agent({
   name: 'Hacker News Buddy',
