@@ -21,9 +21,5 @@ export const vnextNetwork = new NewAgentNetwork({
     workflows: {
         activityPlanner,
     },
-    memory: new Memory({
-        storage: new LibSQLStore({
-            url: "file:../../mastra.db",
-        }),
-    }),
+    memory: new Memory(),
 })
