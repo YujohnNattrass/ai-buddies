@@ -1,6 +1,6 @@
 import { openai } from "@ai-sdk/openai";
 import { NewAgentNetwork } from "@mastra/core/network/vNext";
-import { ghibliFilmsBuddy, gitBuddy, hackerNewsBuddy, planningBuddy, storyBuddy } from "../agents/buddies";
+import { ghibliFilmsBuddy, hackerNewsBuddy, planningBuddy, storyBuddy } from "../agents/buddies";
 import { activityPlanner } from "../workflows/activity-planner";
 import { Memory } from "@mastra/memory";
 import { LibSQLStore } from "@mastra/libsql";
@@ -13,7 +13,7 @@ export const vnextNetwork = new NewAgentNetwork({
     name: "vnextNetwork",
     model: openai('gpt-4o-mini'),
     agents: {
-        gitBuddy,
+    
         hackerNewsBuddy,
         ghibliFilmsBuddy,
         storyBuddy
